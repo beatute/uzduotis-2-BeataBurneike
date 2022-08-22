@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 300px;
+  }
+  
+  section {
+    margin: auto;
+    max-width: 1400px;
+  }
+  
+  nav {
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+  }
+  
+  .nav-logo {
+    height: 70px;
+  }
+  
+  .mobile-logo {
+    display: none;
+  }
+  
+  .user-info {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    align-items: center;
+  }
+
+  .user-photo{
+    grid-column: 1/2;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+        
+  }
+  .user-name{
+    font-size: 22px;
+    font-weight: 200;
+    grid-column: 2/7;
+}
+  p{
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+  .banner{
+    background-image: url(./task/assets/flower-banner.jpg);
+    max-width: 100%;
+    height: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 40px;
+     }
+
+  .galery{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 0;
+}
+ 
+  .galery-item {
+    width: 250px;
+    cursor: pointer;
+}
+  
+  .galery-item img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
+@media only screen and (max-width: 992px) {
+    .user-info {
+        gap: 30px;
+  }
+  .galery {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  .galery-item {
+    grid-column: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+      }
+         
+    .desktop-tablet-logo {
+        display: none;
+      }
+    
+    .mobile-logo {
+        display: block;
+      }
+    
+    .nav-list {
+        display: none;
+    
+      }
+    .user-info {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;     
+      }
+
+    p{
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    .banner{
+        height: 100px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 40px;
+      }
+    .galery {
+        grid-template-columns: auto;
+      }
+
+    }
