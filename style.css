@@ -61,9 +61,13 @@ html {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    margin-left: 20px;
-        
+    margin-left: 0px;    
   }
+
+  .user-img{
+    margin-left: -30px;
+  }
+
   .user-name{
     font-size: 22px;
     font-weight: 200;
@@ -95,16 +99,23 @@ html {
 }
  
   .galery-item {
-    width: 250px;
+    width: 232px;
     cursor: pointer;
-}
-  
-  .galery-item img {
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    position: relative;
   }
-  
+  .galery-item-name{
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 60%;
+    width: 20px; 
+    height: 20px;
+
+  }
+
 @media only screen and (max-width: 992px) {
     .user-info {
         gap: 30px;
@@ -116,7 +127,7 @@ html {
   }
   .galery-item {
     grid-column: auto;
-  }
+    
 }
 
 @media only screen and (max-width: 768px) {
