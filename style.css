@@ -120,10 +120,11 @@ html {
     .user-info {
         gap: 30px;
   }
+
+  /* Komnentaras: kai eini miegoti, ateina genialios mintys :D */
   .galery {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
   }
   .galery-item {
     grid-column: auto;
@@ -173,5 +174,4 @@ html {
     .galery {
         grid-template-columns: auto;
       }
-
-    }
+  } 
